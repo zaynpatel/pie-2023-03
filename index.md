@@ -1,4 +1,4 @@
-## Welcome to Principles of Integrated Engineering Fall 2022
+## Welcome to Principles of Integrated Engineering Fall 2023
 Click on a link below to visit the website for that team's project.
 They are listed in reverse-alphabetical order.
 
