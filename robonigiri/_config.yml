@@ -12,7 +12,6 @@ favicon: https://i.imgur.com/QuEpqQb.png
 gh_sponsor: sidkofi
 hide_share_buttons: true
 remote_theme: chrisrhymes/bulma-clean-theme
-theme: bulma-clean-theme
 paginate: 5
 paginate_path: "/blog/page:num"
 
