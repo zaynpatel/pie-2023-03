@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/robonigiri/sitemap.xml
+Sitemap: olincollege.github.io/pie-2023-03/robonigiri/sitemap.xml
