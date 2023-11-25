@@ -11,7 +11,7 @@ permalink: pretty
 favicon: https://i.imgur.com/QuEpqQb.png
 gh_sponsor: sidkofi
 hide_share_buttons: true
-theme: bulma-clean-theme
+remote_theme: chrisrhymes/bulma-clean-theme
 
 paginate: 5
 paginate_path: "/blog/page:num"
