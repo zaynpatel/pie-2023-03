@@ -260,6 +260,7 @@ GEM
       unf_ext
     unf_ext (0.0.8.2)
     unicode-display_width (1.8.0)
+    unicode_utils (1.4.0)
     wdm (0.1.1)
     webrick (1.8.1)
     zeitwerk (2.6.12)
@@ -272,6 +273,7 @@ DEPENDENCIES
   github-pages
   tzinfo (~> 1.2)
   tzinfo-data
+  unicode_utils
   wdm (~> 0.1.1)
   webrick
 
