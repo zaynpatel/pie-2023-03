@@ -1,3 +1,9 @@
-## This Project Team's page will appear here when the students finish it.
+## Turing Machine 
 
-Students: you can delete this file.
+PIE Fall 2023 
+
+**Team members:** Sparsh Gupta, Mark Belanger, Noah Rand, Joe Leedy, Will young
+
+Our GitHub repo with the codebase and resources for the Turing Machine is located at: https://github.com/olincollege/TuringMachine 
+
+Our website is located at: https://olincollege.github.io/pie-2023-03/turing-machine/
