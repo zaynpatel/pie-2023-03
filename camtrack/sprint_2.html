@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">cam-track</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -131,9 +131,9 @@
       </div>
       <div style="margin-top: 50px;">
         <p style="margin-left: 0px;">
-          The mechanical goal for Sprint 2 was to completely finish CAD for the entire tripod design and begin working on fabrication for
-          the final assembly. The pan-and-tilt mechanism was 3D-printed, with stepper motors screwed into place where it could vertically tilt
-          and horizontally pan the camera around. uhhhhhhhh change wording later
+          One major step forward this sprint was switching from servos to stepper motors to rotate the camera. We decided on using A4988 
+          stepper motor drivers and a CNC motorshield attached to the Arduino UNO R3 to control the steppers. The code controlling the 
+          stepper motors also was adjusted to separately command the x and y motors to rotate the camera until it centered in on the face. 
         </p>
       </div>
     </div>

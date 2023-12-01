@@ -10,8 +10,8 @@
 .title-card {
     width: 75rem;
     text-align: center;
-    padding: 150px 50px;
-    margin-top: 50px;
+    padding: 150px 70px;
+    margin-top: 150px;
     animation: fadeIn 5s;
     border: 3px solid black;
 }
@@ -19,7 +19,8 @@
 .sprint-card {
     width: 60rem;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 130px;
+    animation: fadeIn 5s;
     border: 3px solid black;
 }
 
