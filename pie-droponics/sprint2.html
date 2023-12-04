@@ -21,11 +21,13 @@
           <h2>Sprint II</h2>
         </header>
         <h3><b>Sprint Overview</b></h3>
-        <p>
-          The goal of sprint 2 was to create a portable hydroponics cart that
-          can pump water & nutrients and turn on growing lights based on a set
-          schedule.
-        </p>
+        <p>The goal of sprint 2 was to improve upon sprint 1 by</p>
+        <ul>
+          <li>Housing all components on a cart</li>
+          <li>Build modular plant channels</li>
+          <li>Fully automated light & pump actuation</li>
+          <li>Making it aesthetically pleasing.</li>
+        </ul>
         <h3><b>Mechanical</b></h3>
         <p>Description of mechanical component</p>
 
@@ -33,7 +35,24 @@
         <p>Description of electrical component</p>
 
         <h3><b>Software</b></h3>
-        <p></p>
+        <p>
+          The biggest software change from Sprint 1 is that there are now 3
+          different actuators (water pump, nutrient pump, growing light) that
+          runs on their own respective schedule. While both pumps still run on a
+          simple millis() loop, the light uses actual time (ex. Turn on at 11:50
+          AM, turn off at 1:00 PM) for scheduling.
+        </p>
+        <ul class="actions">
+          <li>
+            <a
+              href="https://github.com/dokyun-kim4/pie-droponics/tree/sprint-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button primary"
+              >View GitHub Repo</a
+            >
+          </li>
+        </ul>
 
         <h3><b>Sprint 2 Demo</b></h3>
 
