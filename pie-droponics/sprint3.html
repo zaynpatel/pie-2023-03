@@ -31,14 +31,46 @@
           <li>Improve waterproofing for water-contacting parts</li>
           <li>Making it aestherically pleasing</li>
         </ul>
-        <h3><b>Mechanical</b></h3>
+        <h3><b>Mechanical Updates</b></h3>
         <p></p>
 
-        <h3><b>Electrical</b></h3>
+        <h3><b>Electrical Updates</b></h3>
         <p></p>
 
-        <h3><b>Software</b></h3>
-        <p></p>
+        <h3><b>Software Updates</b></h3>
+        <p>
+          As mentioned earlier, most of the software work this sprint involved
+          improving user interface with the React app we created using AWS
+          services. Shown below is our React App for user interaction.
+        </p>
+        <img style="width: 40%" src="images/reactapp.png" />
+        <p>
+          Description of how we use AWS dynamoDB and graphQL to display sensor
+          readings on the website
+        </p>
+        <img
+          style="width: 50%"
+          src="images/sensor-graph.png"
+          alt="sensor-graph"
+        />
+        <p>
+          For changing the schedules, we used the same AWS MQTT service to
+          publish a new schedule in json format to the ESP32. The json is then
+          parsed to determine which actuator schedule to modify. Shown below is
+          how the json is formatted for uploading a new schedule. <br />
+
+          <b
+            >{ <br />
+            "target":"water_pump", <br />
+            "startTime":"01:10:00", <br />
+            "onInterval":"00:00:05", <br />
+            "offInterval":"00:00:10" <br />
+            } <br
+          /></b>
+          The command sent above would set the water pump to start at 1:10 am,
+          and alternate between turning on for 5 seconds and turning off for 10
+          seconds.
+        </p>
         <ul class="actions">
           <li>
             <a
