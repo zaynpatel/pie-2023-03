@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sprint 2</title>
+    <title>Sprint 3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
   </head>
@@ -26,10 +26,10 @@
                 <a class="nav-link" href="sprint_1.html">Sprint 1</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="sprint_2.html">Sprint 2</a>
+                <a class="nav-link" href="sprint_2.html">Sprint 2</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="sprint_3.html">Sprint 3</a>
+                <a class="nav-link active" aria-current="page" href="sprint_3.html">Sprint 3</a>
               </li>
             </ul>
           </div>
@@ -38,9 +38,9 @@
 
     <div class="container">
         <div class="card mx-auto img-fluid sprint-card">
-            <img class="card-img-top" src="assets/sprint_2_bg.png">
+            <img class="card-img-top" src="assets/sprint_1_bg.JPG">
             <div class="card-img-overlay">
-                <h1 class="card-text" style="padding: 185px 0px; color:white">Sprint 2</h1>
+                <h1 class="card-text" style="padding: 185px 0px; color:white">Sprint 3</h1>
             </div>
         </div>
     </div>
@@ -50,15 +50,14 @@
       <br>
       <div class="row">
         <div class="col-7">
-          <iframe width="840" height="472.5" src="https://www.youtube.com/embed/yhDmNhJyVxQ?si=lVoDk6JoAgKWY76h" 
+          <iframe width="840" height="472.5" src="https://www.youtube.com/embed/C_B74FUo9go?si=y5HzxjLGSeP-KxLx" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
             picture-in-picture; web-share" allowfullscreen>
           </iframe>
         </div>
         <div class="col-5">
-          <p>The goal for this sprint was to get the pan-and-tilt part of our automated tripod working. We 3D-printed the pan-tilt mechanism,
-            which would contain the DSLR camera, and programmed two stepper motors to rotate the camera using this mechanism. Only vertical
-            motion was finalized with this design due to mechanical errors, which would be fixed in later sprints.
+          <p>The goal for this sprint was to finish a very basic version of our final product. We assembled a cardboard structure that rotated
+            a cardboard pointer around to follow a face, which we detected using a facial detection program with a Raspberry Pi and PiCamera.
           </p>
         </div>
       </div>
@@ -68,30 +67,24 @@
         <h3>Mechanical</h3>
         <br>
         <div class="row">
-            <div class="col-4">
-                <img src="assets/mech_sprint_2_cad.JPG" style="height:auto; width:450px; border: 3px solid gray;">
-                <figcaption>First draft of a CAD model of the full tripod and pan-tilt design to hold the camera. Different
-                  subsystems within the CAD model are labeled on the image.
-                </figcaption>
+            <div class="col-3">
+                <img src="assets/mech_sprint_1.JPG" style="height:auto; width:350px;">
+                <figcaption>Sketch model of the initial design</figcaption>
             </div>
-            <div class="col-4">
-              <img src="assets/mech_sprint_2_pan_tilt.jpg" style="height:auto; width: 450px;">
-              <figcaption>3D-printed pan-and-tilt mechanism</figcaption>
+            <div class="col-3">
+              <img src="assets/mech_sprint_1_enclosure.JPG" style="height:auto; width:350px;">
+              <figcaption>Electronics enclosure box with servo attached to the rotating rod</figcaption>
             </div>
-            <div class="col-4">
-              <iframe width="480" height="350" src="https://www.youtube.com/embed/1rHUXnnqVIM?si=mZBT2x-WRoi8Zoy5" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-              </iframe>
-              <figcaption>Mechanical video demo of the pan-and-tilt mechanism holding the camera</figcaption>
+            <div class="col-6">
+                <p>For the mechanical side of Sprint 1, we built a simple sketch model out of cardboard with a rotating 
+                  PVC rod to mimic how our final product would pan around to follow a person's face. We started out using a servo to rotate the 
+                  cardboard finger mounted on top just to get proof of concept. 
+                </p>
+                <p>
+                  The sketch model also included spaces for storing electronic components near the base and a mounting spot near the 
+                  top of the rod for the PiCamera.
+                </p>
             </div>
-        </div>
-        <div style="margin-top: 50px;">
-          <p style="margin-left: 0px;">
-            The mechanical goal for Sprint 2 was to completely finish CAD for the entire tripod design and begin working on fabrication for
-            the final assembly. The pan-and-tilt mechanism was 3D-printed, with stepper motors screwed into place where it could vertically tilt
-            and horizontally pan the camera around. uhhhhhhhh change wording later
-          </p>
         </div>
     </div>
 
@@ -100,7 +93,7 @@
       <br>
       <div class="row">
           <div class="col-3">
-              <img src="assets/elec_sprint_1.JPG" style="height:auto; width:350px;">
+              <img src="assets/elec_sprint_1.jpg" style="height:auto; width:350px;">
               <figcaption>Electrical connections between the Arduino, Raspberry Pi, Picamera, and Servo</figcaption>
           </div>
           <div class="col-3">
@@ -120,21 +113,24 @@
       <h3>Electrical</h3>
       <br>
       <div class="row">
-          <div class="col-5">
-              <img src="assets/sprint_2_stepper.gif" style="height:350px; width:auto;">
-              <figcaption>Demo of moving stepper motors at different speeds with Serial commands through the Arduino</figcaption>
+          <div class="col-3">
+              <img src="assets/elec_sprint_1.jpg" style="height:auto; width:350px;">
+              <figcaption>Electrical setup of the Arduino, Raspberry Pi, PiCamera, and Servo</figcaption>
           </div>
-          <div class="col-6" style="margin-left: 50px;">
-            <img src="assets/sprint_2_elec_diagram.png" style="height:350px; width:auto;">
+          <div class="col-4">
+            <img src="assets/elec_sprint_1_diagram.JPG" style="height:auto; width:480px; border: 2px solid black;">
             <figcaption>Block diagram showing wire connections between all electrical components</figcaption>
           </div>
-      </div>
-      <div style="margin-top: 50px;">
-        <p style="margin-left: 0px;">
-          One major step forward this sprint was switching from servos to stepper motors to rotate the camera. We decided on using A4988 
-          stepper motor drivers and a CNC motorshield attached to the Arduino UNO R3 to control the steppers. The code controlling the 
-          stepper motors also was adjusted to separately command the x and y motors to rotate the camera until it centered in on the face. 
-        </p>
+          <div class="col-5">
+              <p> In this sprint, we needed to set up all the electronic parts and make sure they all
+                worked as intended, at least on a very basic level. We found suitable power supplies for the Arduino and Raspberry Pi, and
+                ensured they could communicate properly over Serial communication.
+              </p>
+              <p>
+                After verifying the setup, we programmed the Arduino to drive the servo towards the correct direction based off commands given
+                from the Raspberry Pi about the position of the detected face. 
+              </p>
+          </div>
       </div>
     </div>
     <br>
