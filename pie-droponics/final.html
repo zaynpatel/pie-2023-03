@@ -21,15 +21,35 @@
           <h2>Final Product</h2>
         </header>
         <h3><b>System Diagram</b></h3>
-        <div class="col-12">
-          <span class="image fit"
-            ><img
-              style="width: 30%"
-              src="images/system-diagram.png"
-              alt="system-diagram"
-          /></span>
-        </div>
-        <h3><b>Mechanical Overview</b></h3>
+        <pre class="mermaid">
+          flowchart TD
+          A([User])
+          style A fill:#00ff00,stroke:#333,stroke-width:4px;
+          B([React App])
+          D{ESP32}
+          E([Water Pump])
+          F([Nutrient Pump])
+          G([LEDs])
+          H([Temperature Sensor])
+          I([Humidity Sensor])
+          J([Illuminance Sensor])
+          K([AWS MQTT])
+          L[(AWS DynamoDB)]
+
+          A --> |user input|B
+          B --> |cmd/|K
+          D --> |new schedule|E
+          D --> |new schedule|F
+          D --> |new schedule|G
+          H --> |sensor data|D
+          I --> |sensor data|D
+          J --> |sensor data|D
+          D <--> |input & output data|K
+          K --> |sensor/+|L
+          L --> |GraphQL API|B
+            </pre
+        >
+        <h3><b>Mechanical Update</b></h3>
         <p></p>
         <ul class="actions">
           <li>
@@ -37,10 +57,10 @@
           </li>
         </ul>
 
-        <h3><b>Electrical Overview</b></h3>
+        <h3><b>Electrical Update</b></h3>
         <p></p>
 
-        <h3><b>Software Overview</b></h3>
+        <h3><b>Software Update</b></h3>
         <p>Talk about react app update</p>
         <div style="text-align: center">
           <a
@@ -48,15 +68,18 @@
             href="https://main.d2umog3c2kwcmy.amplifyapp.com/"
             target="_blank"
             rel="noopener noreferrer"
-            ><img style="width: 5%" src="images/reactlogo.png"
+            ><img style="width: 5%" src="images/final/reactlogo.png"
           /></a>
           <p>Visit our React App</p>
         </div>
-        <br />
+        <br /><br />
         <div style="text-align: center">
           <a href="index.html" class="button">Back to Home</a>
         </div>
       </div>
     </section>
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    </script>
   </body>
 </html>

@@ -21,7 +21,10 @@
           <h2>Sprint III</h2>
         </header>
         <h3><b>Sprint Overview</b></h3>
-        <p>The goal of sprint 3 was to improve upon sprint 2 by</p>
+        <p>
+          The goal of Sprint III was to improve upon
+          <a href="sprint2.html">Sprint II</a> by
+        </p>
         <ul>
           <li>
             Allowing the user to monitor the sensor readings and change the
@@ -33,35 +36,67 @@
         </ul>
         <h3><b>Mechanical Updates</b></h3>
         <p>
-          Gutter endcap: PLA -> ABS<br />
-          New power box mount<br />
-          New ESP32 box<br />
+          From <a href="sprint2.html">Sprint II</a> to Sprint III, we updated
+          where and how we were mounting our electrical equipment. In
+          <a href="sprint2.html">Sprint II</a>, our electrical components were
+          fixed to a wooden board that was then mounted to the side of our cart.
+          Though this was a temporary solution, we decided that our electronics
+          should be moved to a part of our cart above where water was flowing,
+          to avoid any accidents. We created this mount, with open sides for
+          easier wire access, for the top of our cart. The red standoffs are 3D
+          printed in PLA, and the plates are laser cut clear acrylic. We liked
+          the aesthetics of this design, where all electronics are visible.
         </p>
-        <p>Description of esp32 case</p>
-        <img style="width: 25%" src="images/esp32case.png" />
-        <p>Description of power box mount</p>
-        <img style="width: 25%" src="images/powerboxmount.png" />
+        <img width="20%" src="images/sprint3/esp-box.JPG" />
+        <img width="22%" src="images/sprint3/esp32case.png" />
+
+        <p>
+          In <a href="sprint2.html">Sprint II</a>, we mounted the LED grow
+          lights with an acrylic strip and zip ties. In this sprint, we improved
+          the design of the LED mount by creating flower-shaped mounts which
+          require less material and enhance the visual appearance of the cart.
+        </p>
+        <img style="width: 19%" src="images/sprint3/light-mount-flower.JPG" />
+        <img style="width: 25%" src="images/sprint3/light-mount-compare.jpg" />
+
+        <p>
+          In order to mount the power box at the top of the cart, we modified
+          the L-shaped hook from Sprint 1 to serve as a hook for an acrylic
+          shelf. To secure the power box on the mount, we designed the shelf to
+          be a shallow box, and we designed the acrylic box with finger joints
+          and mortise/tenon joints so the acrylic box does not require
+          fasteners. The acrylic box is fastened to the 3D-printed hook with 4
+          bolts.
+        </p>
+        <img style="width: 25%" src="images/sprint3/PowerBoxMountRender1.JPG" />
+        <h5><b>Reasons for Design</b></h5>
+        <p>
+          We wanted to design around having safe and neat electrical housing for
+          this sprint, and refining a lot of the integration from the previous
+          sprint. This in turn makes our design much more safe, but also more
+          professional and fits with our goal of nice aesthetics.
+        </p>
 
         <h3><b>Electrical Updates</b></h3>
         <p>Breadboard setup -> ESP32 shield</p>
-        <img style="width: 50%" src="images/breadboard2esp.png" />
+        <img style="width: 50%" src="images/sprint3/breadboard2esp.png" />
         <p>Circuit Schematic</p>
-        <img style="width: 50%" src="images/sprint3_circuit.png" />
+        <img style="width: 50%" src="images/sprint3/sprint3_circuit.png" />
 
         <h3><b>Software Updates</b></h3>
         <p>
           As mentioned earlier, most of the software work this sprint involved
           improving user interface with the React app we created using AWS
-          services. Shown below is our Radeact App for user interaction.
+          services. Shown below is our React App for user interaction.
         </p>
-        <img style="width: 40%" src="images/reactapp.png" />
+        <img style="width: 40%" src="images/sprint3/reactapp.png" />
         <p>
           Description of how we use AWS dynamoDB and graphQL to display sensor
           readings on the website
         </p>
         <img
           style="width: 50%"
-          src="images/sensor-graph.png"
+          src="images/sprint3/sensor-graph.png"
           alt="sensor-graph"
         />
         <p>
@@ -93,12 +128,19 @@
             >
           </li>
         </ul>
-        <br />
-        <div style="text-align: center">
-          <a href="index.html" class="button">Back to Home</a>
-        </div>
 
-        <!-- React Website Linked to React Symbol -->
+        <h3><b>Sprint Reflection</b></h3>
+        <p>
+          We ran into some issues with the stability of our components,
+          especially when testing by pushing the cart over rough surfaces, but
+          aside from the power tray, everything is stable with no modifications.
+          We want to iterate in the try by super gluing it together between now
+          and demo day.
+        </p>
+        <br /><br />
+        <div style="text-align: center">
+          <a href="index.html#our-journey" class="button">Back to Home</a>
+        </div>
       </div>
     </section>
   </body>
