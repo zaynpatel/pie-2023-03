@@ -99,18 +99,26 @@
       <h3>Software</h3>
       <br>
       <div class="row">
-          <div class="col-3">
-              <img src="assets/elec_sprint_1.JPG" style="height:auto; width:350px;">
-              <figcaption>Electrical connections between the Arduino, Raspberry Pi, Picamera, and Servo</figcaption>
-          </div>
-          <div class="col-3">
-            <img src="assets/elec_sprint_1_diagram.JPG" style="height:auto; width:350px;">
-            <figcaption>Block diagram showing wire connections between all electrical components</figcaption>
-          </div>
-          <div class="col-6">
-              <p> The Raspberry Pi ran a Haar Cascade classification program that could detect faces with the attached PiCamera.
-                It calculated the distance from the center of the face from the center of the camera frame and sent that distance to the Arduino
-                over Serial communication to control the servo. 
+        <div class="col-5">
+            <img src="assets/sprint_2_detect.gif" style="height:350px; width:auto;">
+            <figcaption>Demo of the SSD network identifying a person</figcaption>
+        </div>
+        <div class="col-6" style="margin-left: 50px;">
+          <img src="assets/sprint_2_dnn_framework.png" style="height:250px; width:auto;">
+          <figcaption>A diagram of the general framework for a SSD network</figcaption>
+        </div>
+    </div>
+          <div style="margin-top: 50px;">
+          <p style="margin-left: 0px;">
+                For this sprint, the primary software goal was to find a more adaptable person recognition algorithm. For an 
+                algorithm to meet our needs it would have to fulfill two criteria. First, it needs to track the full body, and work
+                in a range of poses for a range of people. Secondly, it needs to be able to run on a Raspberry Pi 4. This is by far
+                our largest limitation, since object detection algorithms that are conventionally considered fast, wouldn't have sufficient
+                performance on our Raspberry Pi. Solutions such as YOLO or TensorFlow either didn't run or were too slow, yet some sort of
+                machine learning approach was still needed in order to fit our first criteria. Eventually we settled on a Single-Shot multibox
+                Detection network initialized with OpenCV's dnn Detection Model class, trained on the COCO dataset. With this algorithm implemented,
+                we could now place a bounding box around a wide range of subjects and poses, resolving the bias issues of our previous implementation.
+                However, since the code was re-detecting every frame, we were only getting about 5 frames a second.
               </p>
           </div>
       </div>
