@@ -48,7 +48,6 @@
           the aesthetics of this design, where all electronics are visible.
         </p>
         <img width="20%" src="images/sprint3/esp-box.JPG" />
-        <img width="22%" src="images/sprint3/esp32case.png" />
 
         <p>
           In <a href="sprint2.html">Sprint II</a>, we mounted the LED grow
@@ -78,9 +77,22 @@
         </p>
 
         <h3><b>Electrical Updates</b></h3>
-        <p>Breadboard setup -> ESP32 shield</p>
-        <img style="width: 50%" src="images/sprint3/breadboard2esp.png" />
-        <p>Circuit Schematic</p>
+        <p>
+          Most of the electrical work in this sprint involved taking what we
+          made in <a href="sprint2.html">Sprint II</a> and organizing it. The
+          biggest task was transferring everything that was on the wooden board
+          onto a protoboard and putting it on the ESP32.
+        </p>
+        <img style="width: 50%" src="images/sprint3/breadboard2esp.png" /><br />
+        <p>
+          After putting all the components on the ESP32, we can now store the
+          entire circuit inside the case we made earlier.
+        </p>
+        <img width="22%" src="images/sprint3/esp32case.png" />
+        <p>
+          In terms of the electrical components in the circuit, nothing has
+          changed from what we had for <a href="sprint2.html">Sprint II</a>
+        </p>
         <img style="width: 50%" src="images/sprint3/sprint3_circuit.png" />
 
         <h3><b>Software Updates</b></h3>
@@ -91,14 +103,12 @@
         </p>
         <img style="width: 40%" src="images/sprint3/reactapp.png" />
         <p>
-          Description of how we use AWS dynamoDB and graphQL to display sensor
-          readings on the website
+          When the sensors publish their readings through the AWS MQTT service,
+          the readings are added to an AWS DynamoDB database. Then, the React
+          app fetches the values in the database using a GraphQL API to display
+          it on the web page as a graph.
         </p>
-        <img
-          style="width: 50%"
-          src="images/sprint3/sensor-graph.png"
-          alt="sensor-graph"
-        />
+        <img style="width: 50%" src="images/sprint3/graphs.png" />
         <p>
           For changing the schedules, we used the same AWS MQTT service to
           publish a new schedule in json format to the ESP32. The json is then
