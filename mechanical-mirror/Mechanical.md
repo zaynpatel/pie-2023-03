@@ -30,7 +30,7 @@ The pixel design for sprint 1 sprint 2 (left), and sprint 3 (right) this pixel d
 
 ![A rendering of the Vertical Servo Arm design used for sprint 1](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/VSASp1.png "Sprint 1 Vertical Servo Arm")
 ![A rendering of the Vertical Servo Arm design used for sprint 2](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/VSASp2.png "Sprint 2 Vertical Servo Arm")
-![A rendering of the Vertical Servo Arm design used for sprint 3](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/VSASp1.png "Sprint 3 Vertical Servo Arm")
+![A rendering of the Vertical Servo Arm design used for sprint 3](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/VSASp3.png "Sprint 3 Vertical Servo Arm")
 
 The Vertical Servo Arm (VSA) design for sprint 1 (left), sprint 2 (center), and sprint 3 (right). Each consists of a large arm moved by the linear screw actuators back and forth containing servos with the gears to mesh with each pixel. This is what moves collum by collum meshing with and then rotating pixels to change what color they display thus drawing an image on the mirror.
 
@@ -48,10 +48,10 @@ We used a scrap threaded rod as a lead screw, instead of a proper lead screw wit
 
 
 (A view of our sprint 1 design as it was in the CAD.)
-
-
-
+![A view of our sprint 1 design as it was in the CAD](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP1CADrender.png "Sprint 1 CAD Render")
 (A view of our completed sprint 1 design of the front mechanisms not in view)
+![A view of our completed sprint 1 design of the front mechanisms not in view] (https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP1RealPic.png "Sprint 1 Output")
+
 
 ## Sprint 2: 
 For the second version, we ambitiously scaled the mirror up to a 5 by 5-pixel design again using the same basic principles. We used the pixel design mounted with paper straw to a PLA frame design, but we added a laser-cut MDF board with 25 square holes in the 5 x 5 pattern where each pixel-frame couple could be glued to a hole in the board. The pixels were colored white on one side with gaffer tape. 
