@@ -47,10 +47,9 @@ The pixel structure was then glued to the square structure with the stepper-moto
 We used a scrap threaded rod as a lead screw, instead of a proper lead screw with a larger pitch. Due to our unfamiliarity with lead screws, we wanted to test whether the idea would work before ordering one. The threaded rod we used has a much lower pitch than the lead screws used in Sprints 2 and 3, so traversal along it was very slow. However, it provided proof of concept that the design would work.
 
 
-(A view of our sprint 1 design as it was in the CAD.)
 ![A view of our sprint 1 design as it was in the CAD](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP1CADrender.png "Sprint 1 CAD Render")
-(A view of our completed sprint 1 design of the front mechanisms not in view)
-![A view of our completed sprint 1 design of the front mechanisms not in view] (https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP1RealPic.png "Sprint 1 Output")
+
+![A view of our completed sprint 1 design of the front mechanisms not in view](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP1RealPic.jpg "Sprint 1 Output")
 
 
 ## Sprint 2: 
@@ -64,10 +63,9 @@ Our Sprint 2 VSA was a flat plate of laser-cut MDF with holes in it for mounting
 
 Cad screenshot placeholder
 
-(A view of our sprint 2 design in CAD)
+![A view of our sprint 2 design as it was in the CAD](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP2CADrender.png "Sprint 2 CAD Render")
 
-
-(A rear view Photo of our sprint 2 design ) 
+![A view of our completed sprint 2 design of the front mechanisms not in view](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP2RealPic.jpg "Sprint 2 Output")
 
 
 ## Sprint 3:
@@ -81,6 +79,6 @@ To improve the overall speed of the mirror, we decided to test a more complicate
 
 As a fallback plan for if we ran out of time, we made it possible for the design to be scaled back to the original VSA design we used in sprint 2, where each servo has only one gear attached to it. After some initial testing of the more ambitious VSA design, we had to scale back down to the original design. Because of impending deadlines, the fabrication was done quickly and haphazardly, and as a result, the product wasn’t precise enough and the fallback plan was successfully implemented resulting in our sprint 3 design. 
 
-(A view of our sprint 3 / final design in CAD)
+![A view of our sprint 3 design as it was in the CAD](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP1CADrender.png "Sprint 3 CAD Render")
 
-(a front view of the sprint 3 design mechanisms not in view)
+![A view of our completed sprint 3 design of the front mechanisms not in view](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP3RealPic.jpg "Sprint 3 Output")
