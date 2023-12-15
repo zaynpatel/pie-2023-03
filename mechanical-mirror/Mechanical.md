@@ -13,7 +13,7 @@ Each servo has a gear on it. As the VSA moves across the mirror, the gear aligns
 We used this design to prevent the need for a servo for every single pixel, as that would not be scalable in terms of overall cost.
 
 
-!(https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/MMMechanismPrinciples.png "A simple diagram demonstrating these working principles")
+![A simple diagram demonstrating these working principles](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/MMMechanismPrinciples.png "A simple diagram demonstrating these working principles")
 
 
 The pixel design for sprint 1 sprint 2 (left), and sprint 3 (right) this pixel design worked well and was actuated by a similarly sized gear connected to the VSA. For sprints 1 and 2 each pixel had its mounting frame that it would spin freely inside of while in sprint 3 the pixel was directly mounted (while still able to free spin) to the mirror. Colored black and white these will form the image drawn upon the mirror.
