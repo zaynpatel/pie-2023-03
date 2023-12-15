@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mechanical Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">cam-track</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">About Us</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                Product Details
+              </a>
+              <ul class="dropdown-menu">
+                <li style="margin-left:0px"><a class="dropdown-item" href="mechanical.html">Mechanical Design</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="electrical.html">Electrical and Firmware Design</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="software.html">Software Design</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="budget.html">Bill of Materials</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sprints
+              </a>
+              <ul class="dropdown-menu">
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_1.html">Sprint 1</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_2.html">Sprint 2</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_3.html">Sprint 3</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container sec-title">
+        <div class="card mx-auto img-fluid section-card" style="background-color: black;">
+            <h1 class="card-text" style="color:white; font-size: 50px;">Mechanical Design</h1>
+        </div>
+    </div>
+
+    <div class="overview">
+      <h4>Overview</h4>
+      <br>
+      <div class="row">
+        <div class="col">
+          <img src="assets/final_prod_assets/full_tripod.jpg" style="width: 100%">
+        </div>
+        <div class="col-8">
+          <p>The mechanical setup comprised a tripod equipped with a wheel assembly, providing support for a pan-tilt mechanism that 
+            governed the camera's movements. A majority of the parts were 3D printed, which meant tolerancing was important and for gear 
+            functionality plastic part lubricant was necessary. Each component went through many iterations due to design changes and 
+            accompanying electrical aspects.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="overview">
+      <h4>Tripod and Electrical Housing</h4>
+      <br>
+      <div class="row">
+        <div class="col">
+          <img src="assets/final_prod_assets/tripod.png" style="width: 100%">
+        </div>
+        <div class="col">
+          <img src="assets/final_prod_assets/elec_enclosure_meche.jpg" style="width: 100%">
+        </div>
+        <div class="col">
+          <img src="assets/final_prod_assets/rasp_pi_enclosure.jpg" style="width: 100%">
+        </div>
+        <div class="col">
+          <img src="assets/final_prod_assets/button_mount.jpg" style="width: 100%">
+        </div>
+      </div>
+      <br>
+      <div>
+        <p>The tripod featured three side legs, each connected to a wheel assembly, and a central leg, all constructed from 
+          aluminum circular tube stock to accommodate the stepper motor. To enhance stability, a triangular base made from 
+          rectangular aluminum stock was incorporated at the bottom. Additionally, when using a motorized wheel, a 
+          rectangular stock base was introduced to facilitate the passage of wiring from the electrical enclosure at the base,
+          down the tube to that specific wheel.
+        </p>
+        <p>
+          Several electrical enclosures were integrated into the system, including one at the base, one connecting all tripod legs, 
+          and one on a side leg housing the start/stop button.
+        </p>
+      </div>
+    </div>
+
+    <div class="overview">
+      <h4>Pan-and-Tilt Mechanism</h4>
+      <br>
+      <div class="row">
+        <div class="col">
+          <img src="assets/final_prod_assets/pan_tilt.png" style="width: 100%">
+        </div>
+        <div class="col">
+          <img src="assets/final_prod_assets/pan_tilt_real.jpg" style="width: 100%">
+        </div>
+        <div class="col-5">
+          <p>The pan-tilt mechanism employed gears for both panning and tilting movements. The stepper motor in the tripod assembly
+            engaged with a gear in the pan-tilt base, which, in turn, interacted with subsequent gears to execute panning. 
+            For tilting, a suspended stepper motor with a gear was employed. As the gear ascended the structure with complementary gear 
+            teeth, the camera base would tilt either upward or downward.
+          </p>
+          <p>
+            Guards below the pan-tilt were also attached to the tripod top base in order to prevent the camera and tripod head from falling
+            out.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

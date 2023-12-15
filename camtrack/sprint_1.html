@@ -9,31 +9,47 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">cam-track</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">Our Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="sprint_1.html">Sprint 1</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sprint_2.html">Sprint 2</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sprint_3.html">Sprint 3</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">cam-track</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">About Us</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Product Details
+              </a>
+              <ul class="dropdown-menu">
+                <li style="margin-left:0px"><a class="dropdown-item" href="mechanical.html">Mechanical Design</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="electrical.html">Electrical and Firmware Design</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="software.html">Software Design</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="budget.html">Bill of Materials</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                Sprints
+              </a>
+              <ul class="dropdown-menu">
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_1.html">Sprint 1</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_2.html">Sprint 2</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_3.html">Sprint 3</a></li>
+              </ul>
+            </li>
+            
+          </ul>
         </div>
+      </div>
     </nav>
 
     <div class="container">

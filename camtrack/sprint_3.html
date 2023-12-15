@@ -9,36 +9,52 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">cam-track</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">Our Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sprint_1.html">Sprint 1</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sprint_2.html">Sprint 2</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="sprint_3.html">Sprint 3</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">cam-track</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">About Us</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Product Details
+              </a>
+              <ul class="dropdown-menu">
+                <li style="margin-left:0px"><a class="dropdown-item" href="mechanical.html">Mechanical Design</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="electrical.html">Electrical and Firmware Design</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="software.html">Software Design</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="budget.html">Bill of Materials</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                Sprints
+              </a>
+              <ul class="dropdown-menu">
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_1.html">Sprint 1</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_2.html">Sprint 2</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_3.html">Sprint 3</a></li>
+              </ul>
+            </li>
+            
+          </ul>
         </div>
+      </div>
     </nav>
 
     <div class="container">
         <div class="card mx-auto img-fluid sprint-card">
-            <img class="card-img-top" src="assets/sprint_1_bg.JPG">
+            <img class="card-img-top" src="assets/sprint_3_bg.jpg">
             <div class="card-img-overlay">
                 <h1 class="card-text" style="padding: 185px 0px; color:white">Sprint 3</h1>
             </div>
@@ -50,14 +66,14 @@
       <br>
       <div class="row">
         <div class="col-7">
-          <iframe width="840" height="472.5" src="https://www.youtube.com/embed/C_B74FUo9go?si=y5HzxjLGSeP-KxLx" 
+          <iframe width="840" height="472.5" src="https://www.youtube.com/embed/ngVOAx2I-FU?si=oUiERYj-CyzWmoFo"
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
             picture-in-picture; web-share" allowfullscreen>
           </iframe>
         </div>
         <div class="col-5">
-          <p>The goal for this sprint was to finish a very basic version of our final product. We assembled a cardboard structure that rotated
-            a cardboard pointer around to follow a face, which we detected using a facial detection program with a Raspberry Pi and PiCamera.
+          <p>The goal for this sprint was to finish fabrication of the tripod as well as integrating everything. The tripod was finished, software
+            was refined to have faster response time and less delay, and electrical began experimenting with the new driving RC motor.
           </p>
         </div>
       </div>
@@ -76,13 +92,7 @@
               <figcaption>Electronics enclosure box with servo attached to the rotating rod</figcaption>
             </div>
             <div class="col-6">
-                <p>For the mechanical side of Sprint 1, we built a simple sketch model out of cardboard with a rotating 
-                  PVC rod to mimic how our final product would pan around to follow a person's face. We started out using a servo to rotate the 
-                  cardboard finger mounted on top just to get proof of concept. 
-                </p>
-                <p>
-                  The sketch model also included spaces for storing electronic components near the base and a mounting spot near the 
-                  top of the rod for the PiCamera.
+                <p>made tripod idk
                 </p>
             </div>
         </div>
@@ -101,9 +111,7 @@
             <figcaption>Block diagram showing wire connections between all electrical components</figcaption>
           </div>
           <div class="col-6">
-              <p> The Raspberry Pi ran a Haar Cascade classification program that could detect faces with the attached PiCamera.
-                It calculated the distance from the center of the face from the center of the camera frame and sent that distance to the Arduino
-                over Serial communication to control the servo. 
+              <p> improve perfoamnces
               </p>
           </div>
       </div>
@@ -113,25 +121,24 @@
       <h3>Electrical</h3>
       <br>
       <div class="row">
-          <div class="col-3">
-              <img src="assets/elec_sprint_1.jpg" style="height:auto; width:350px;">
-              <figcaption>Electrical setup of the Arduino, Raspberry Pi, PiCamera, and Servo</figcaption>
+          <div class="col">
+              <img src="assets/sprint_3_elec_diagram.png" style="height:auto; width:100%;">
+              <figcaption>Updated Electrical Diagram</figcaption>
           </div>
-          <div class="col-4">
-            <img src="assets/elec_sprint_1_diagram.JPG" style="height:auto; width:480px; border: 2px solid black;">
-            <figcaption>Block diagram showing wire connections between all electrical components</figcaption>
-          </div>
-          <div class="col-5">
-              <p> In this sprint, we needed to set up all the electronic parts and make sure they all
-                worked as intended, at least on a very basic level. We found suitable power supplies for the Arduino and Raspberry Pi, and
-                ensured they could communicate properly over Serial communication.
-              </p>
-              <p>
-                After verifying the setup, we programmed the Arduino to drive the servo towards the correct direction based off commands given
-                from the Raspberry Pi about the position of the detected face. 
-              </p>
+          <div class="col">
+            <iframe width="100%" height="90%" src="https://www.youtube.com/embed/ZElkx8AtyqQ?si=1YGYm_EMe5jlcqmf" title="YouTube video player"
+             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             allowfullscreen>
+            </iframe>
+            <figcaption>RC Motor Test Video</figcaption>
           </div>
       </div>
+      <br>
+      <p style="margin-left: 0px;">
+        Our main goal this sprint was to get started on one of our stretch goals: making the RC motor drive the tripod. Through a lot of debugging,
+        we figured out the calibration sequence for the motor to get it started (shown in detail in the video). In this sprint, we simply
+        tested the motor's max speeds to see how much speed might suit our project the best.
+      </p>
     </div>
     <br>
     <br>
