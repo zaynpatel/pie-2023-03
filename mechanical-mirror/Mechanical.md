@@ -1,5 +1,9 @@
-# Mechanical
-## Basic Design used for all sprints.  
+# Mechanical 
+Walk through the Sprints and explain the ideation process and build methods, what worked, what didn’t, pivots made and why
+(Add CAD and Product Images with Descriptions)
+
+
+# Basic Design used for all sprints.  
 Our basic design consists of a grid of drum-shaped pixels with integrated gears that rotate to change what color is currently exposed to a viewer. The axis of rotation is parallel to the X axis (if X is left-right, Y is up down and Z is pointing out of the plane of the mirror). On the back of the mirror, a gantry mechanism flips pixels column by column to display an image, by rotating each to display a desired state.
 
 The gantry system consists of a vertical arm the height of the mirror (which we call the vertical servo arm, or VSA) that moves horizontally across the back of the display. A single servo motor is mounted for every pixel row of the mirror to the vertical servo arm. The horizontal movement is controlled by two lead screws powered by two stepper motors. 
@@ -9,7 +13,20 @@ Each servo has a gear on it. As the VSA moves across the mirror, the gear aligns
 We used this design to prevent the need for a servo for every single pixel, as that would not be scalable in terms of overall cost.
 
 
-(A simple diagram demonstrating these working principles)
+!(https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/MMMechanismPrinciples.png "A simple diagram demonstrating these working principles")
+
+
+The pixel design for sprint 1 sprint 2 (left), and sprint 3 (right) this pixel design worked well and was actuated by a similarly sized gear connected to the VSA. For sprints 1 and 2 each pixel had its mounting frame that it would spin freely inside of while in sprint 3 the pixel was directly mounted (while still able to free spin) to the mirror. Colored black and white these will form the image drawn upon the mirror.
+
+
+
+
+
+
+
+The Vertical Servo Arm (VSA) design for sprint 1 (left), sprint 2 (center), and sprint 3 (right). Each consists of a large arm moved by the linear screw actuators back and forth containing servos with the gears to mesh with each pixel. This is what moves collum by collum meshing with and then rotating pixels to change what color they display thus drawing an image on the mirror.
+
+
 
 
 ## Sprint 1:
@@ -17,7 +34,7 @@ For our first design, we wanted to make a simple proof of concept. We made a 2x2
 
 Each pixel was attached with paper straws to a rectangular PLA frame where it was free to rotate. These frames with the pixels within were glued together and attached to a larger base.
 
-The pixel structure was then glued to the square structure with the stepper-motor powered vertical servo arm. The moving servo arm was further locked in place by 2 dowels that helped guide its movement. This square structure was then glued to the piece containing the pixels. The threaded rod was a simple one designed for construction and thus was held in place by multiple nuts and bolts and the VSA was attached to it with a nut as well. 2 servos, each with a gear attached to it, are mounted to the VSA. 
+The pixel structure was then glued to the square structure with the stepper-motor-powered vertical servo arm. The moving servo arm was further locked in place by 2 dowels that helped guide its movement. This square structure was then glued to the piece containing the pixels. The threaded rod was a simple one designed for construction and thus was held in place by multiple nuts and bolts and the VSA was attached to it with a nut as well. 2 servos, each with a gear attached to it, are mounted to the VSA. 
 
 We used a scrap threaded rod as a lead screw, instead of a proper lead screw with a larger pitch. Due to our unfamiliarity with lead screws, we wanted to test whether the idea would work before ordering one. The threaded rod we used has a much lower pitch than the lead screws used in Sprints 2 and 3, so traversal along it was very slow. However, it provided proof of concept that the design would work.
 
@@ -55,3 +72,7 @@ We made no significant differences in how we mounted the stepper motors and lead
 To improve the overall speed of the mirror, we decided to test a more complicated design for turning pixels. Instead of a single gear, each servo powered a wooden dowel acting as an axle. Attached to the dowel are 3 spaced gears for turning pixels. The gears are spaced such that only one gear ever aligns with a pixel at once. This reduces the distance a servo has to travel by roughly ⅓ and makes it so that the VSA only has to move a short distance to address large portions of the grid. 
 
 As a fallback plan for if we ran out of time, we made it possible for the design to be scaled back to the original VSA design we used in sprint 2, where each servo has only one gear attached to it. After some initial testing of the more ambitious VSA design, we had to scale back down to the original design. Because of impending deadlines, the fabrication was done quickly and haphazardly, and as a result, the product wasn’t precise enough and the fallback plan was successfully implemented resulting in our sprint 3 design. 
+
+(A view of our sprint 3 / final design in CAD)
+
+(a front view of the sprint 3 design mechanisms not in view)
