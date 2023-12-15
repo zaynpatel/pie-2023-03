@@ -3,19 +3,17 @@ You are the art
 # Table of Contents
 
 > We have consolidated our other pages here for ease of access.
-> - [Software](/mechanical-mirror/Software)
-  >   - The algorithms and methods used to get our final output from our input data
-> - [Firmware](/mechanical-mirror/Firmware)
-  >   - The code that controls the servos
-> - [Electrical](/mechanical-mirror/Electrical)
+> - [Code](/pie-2023-03/mechanical-mirror/Code)
+  >   - The insvisible stuff that decides and tells the visible stuff what to do!
+> - [Electrical](/pie-2023-03/mechanical-mirror/Electrical)
  >    - Wiring and Servos Galore!
-> - [Mechanical](/mechanical-mirror/Mechanical)
+> - [Mechanical](/pie-2023-03/mechanical-mirror/Mechanical)
  >    - The Visible (and hidden) mechanics behind the magic!
 
-> - [About the Team](/mechanical-mirror/About)
+> - [About the Team](/pie-2023-03/mechanical-mirror/About)
  >    - More information about the team behind the project (Ale, Dominic, Lauren, Pauleen, and Rohan)
 
-> - [Bill of Materials](/mechanical-mirror/BillofMaterials)
+> - [Bill of Materials](/pie-2023-03/mechanical-mirror/BillofMaterials)
  >    - A list of components, materials, and their associated costs.
 
 
@@ -43,6 +41,7 @@ During each sprint, all the subteams met to decide what route to take based on t
 
 > Designing a modular pixel display
   >  - The point of this goal was to be able to fix broken pixels easily. We achieved modularity by designing the parts to be easily put in and taken out with a snap-fit. 
+
 > Scaling the display during each iteration 
   >  - To demonstrate proof of concept, the team started small and worked their way up. Each sprint involved a larger display than the previous as the matrix went from a 2x2, 5x5, to a 13x15.
 
