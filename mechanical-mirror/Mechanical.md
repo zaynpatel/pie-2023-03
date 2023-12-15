@@ -3,7 +3,12 @@ Walk through the Sprints and explain the ideation process and build methods, wha
 (Add CAD and Product Images with Descriptions)
 
 
-# Basic Design used for all sprints.  
+# Basic Design used for all sprints.
+<div style="text-align: center;">
+![A simple diagram demonstrating the basic design working principles](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/MMMechanismPrinciples.png "Mechanism Principles Dia")
+</div>
+
+
 Our basic design consists of a grid of drum-shaped pixels with integrated gears that rotate to change what color is currently exposed to a viewer. The axis of rotation is parallel to the X axis (if X is left-right, Y is up down and Z is pointing out of the plane of the mirror). On the back of the mirror, a gantry mechanism flips pixels column by column to display an image, by rotating each to display a desired state.
 
 The gantry system consists of a vertical arm the height of the mirror (which we call the vertical servo arm, or VSA) that moves horizontally across the back of the display. A single servo motor is mounted for every pixel row of the mirror to the vertical servo arm. The horizontal movement is controlled by two lead screws powered by two stepper motors. 
@@ -13,16 +18,17 @@ Each servo has a gear on it. As the VSA moves across the mirror, the gear aligns
 We used this design to prevent the need for a servo for every single pixel, as that would not be scalable in terms of overall cost.
 
 
-![A simple diagram demonstrating these working principles](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/MMMechanismPrinciples.png "A simple diagram demonstrating these working principles")
-
+![A rendering of the pixel design used for sprint 1 and 2](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/PixelSp12.png "Sprint 1 and 2 pixel")
+![A rendering of the pixel design used for sprint 3](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/PixelSp3.png "Sprint 3 pixel")
 
 The pixel design for sprint 1 sprint 2 (left), and sprint 3 (right) this pixel design worked well and was actuated by a similarly sized gear connected to the VSA. For sprints 1 and 2 each pixel had its mounting frame that it would spin freely inside of while in sprint 3 the pixel was directly mounted (while still able to free spin) to the mirror. Colored black and white these will form the image drawn upon the mirror.
 
 
 
 
-
-
+![A rendering of the Vertical Servo Arm design used for sprint 1](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/VSASp1.png "Sprint 1 Vertical Servo Arm")
+![A rendering of the Vertical Servo Arm design used for sprint 2](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/VSASp2.png "Sprint 2 Vertical Servo Arm")
+![A rendering of the Vertical Servo Arm design used for sprint 3](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/VSASp1.png "Sprint 3 Vertical Servo Arm")
 
 The Vertical Servo Arm (VSA) design for sprint 1 (left), sprint 2 (center), and sprint 3 (right). Each consists of a large arm moved by the linear screw actuators back and forth containing servos with the gears to mesh with each pixel. This is what moves collum by collum meshing with and then rotating pixels to change what color they display thus drawing an image on the mirror.
 
