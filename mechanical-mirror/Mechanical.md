@@ -5,7 +5,9 @@ Walk through the Sprints and explain the ideation process and build methods, wha
 
 # Basic Design used for all sprints.
 <div style="text-align: center;">
-![A simple diagram demonstrating the basic design working principles](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/MMMechanismPrinciples.png "Mechanism Principles Dia")
+  
+![A simple diagram demonstrating the basic design working principles](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/MMMechanismPrinciples.png "Mechanism Principles Diagram")
+
 </div>
 
 
