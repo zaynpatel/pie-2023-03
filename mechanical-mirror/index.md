@@ -25,6 +25,11 @@ We made a mechanical mirror, which is a mechanical display that displays anyone 
 
 ## Example Video:
 
+<br>
+<br>
+</center><iframe width="560" height="315" src="https://www.youtube.com/embed/98xqTyCnihM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+
 # How it all ties together
 
 ![A System diagram showing how all the different parts interconnect.](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SystemDiagramFinal.jpg "System Diagram")
