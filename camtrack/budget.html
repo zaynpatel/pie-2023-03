@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sprint 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">cam-track</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">About Us</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                Product Details
+              </a>
+              <ul class="dropdown-menu">
+                <li style="margin-left:0px"><a class="dropdown-item" href="mechanical.html">Mechanical Design</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="electrical.html">Electrical and Firmware Design</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="software.html">Software Design</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="budget.html">Bill of Materials</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sprints
+              </a>
+              <ul class="dropdown-menu">
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_1.html">Sprint 1</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_2.html">Sprint 2</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_3.html">Sprint 3</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <style>
+        /* body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        } */
+
+        iframe {
+            width: 90%; /* Adjust the width as needed */
+            height: 750px;
+        }
+    </style>
+
+    <div class="card mx-auto section-card" style="background-color: white; border: 4px solid black;">
+      <div class="card-body">
+          <h3 class="card-text" style="color:black"><i>BUDGET & BILL OF MATERIALS</i></h1>
+      </div>
+    </div>
+
+    <div class="overview" style="text-align: center;">
+      <iframe 
+        width="50%" 
+        height="600" 
+        src="https://docs.google.com/spreadsheets/d/198lMEunJHOPKv5UqveCQDZNLjA4a0JQSwAGUBPzCznI/edit?usp=sharing/pubhtml?widget=true&amp;headers=false">
+      </iframe>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

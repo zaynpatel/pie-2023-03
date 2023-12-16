@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Electrical & Firmware Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">cam-track</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">About Us</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                Product Details
+              </a>
+              <ul class="dropdown-menu">
+                <li style="margin-left:0px"><a class="dropdown-item" href="mechanical.html">Mechanical Design</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="electrical.html">Electrical and Firmware Design</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="software.html">Software Design</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="budget.html">Bill of Materials</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sprints
+              </a>
+              <ul class="dropdown-menu">
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_1.html">Sprint 1</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_2.html">Sprint 2</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="sprint_3.html">Sprint 3</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container sec-title">
+      <div class="card mx-auto img-fluid section-card" style="background-color: gray;">
+          <h1 class="card-text" style="color:white; font-size: 50px;">Electrical Design</h1>
+      </div>
+    </div>
+
+    <div class="overview">
+      <h4>Overview</h4>
+      <br>
+      <div class="row">
+        <div class="col">
+          <img src="assets/final_prod_assets/elec_diagram.jpg" style="width: 100%">
+        </div>
+        <div class="col">
+          <img src="assets/final_prod_assets/electrical_enclosure.jpg" style="width: 100%">
+        </div>
+        <div class="col-5">
+          <p>The diagram to the left represents an overview of all the electrical components and how they are connected. The electrical 
+            enclosure at the base of the tripod is shown as well, housing most of the electronics in this system. The main 
+            sections include:
+          </p>
+          <li>Power Management</li>
+          <li>Stepper Motors for Pan-Tilt Mechanism</li>
+          <li>Raspberry Pi for Tracking and Vision</li>
+          <li style="margin-bottom: 20px;">RC Motor and ESC for Tripod Driving</li>
+          <p>Though all the connections shown were physically wired up, mechanical difficulties and time limitations 
+            ended up having us not use the RC Motor or the ESC in the final product. These components are also are grayed out
+            with dotted lines in the diagram for clarity.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="overview">
+      <h4>Power Management</h4>
+      <br>
+      <div class="row">
+        <div class="col">
+          <img src="assets/final_prod_assets/button.jpg" style="width: 100%">
+        </div>
+        <div class="col">
+          <img src="assets/final_prod_assets/elec_wires_power.jpg" style="width: 100%">
+        </div>
+        <div class="col-6">
+          <p>Because our system contained many moving parts and expensive equipment, we wanted to be able to easily turn all motors on and off
+            with one button and run everything risky off of our one 11.1V LiPo battery. The button we used was mounted on the side of the tripod leg 
+            for easy access and is pictured to the left. The button acted as a switch between the power line of the battery and the rest of 
+            the components being powered, so that when the button was turned off, the components would not be able to draw any power from the 
+            battery.
+          </p> 
+          <p>
+            In order to connect multiple wires to the LiPo battery, we had to solder two wires to a singular one coming from the positive and 
+            negative terminals of the battery. Each wire splitting off from each terminal would go to the corresponding positive/negative end
+            in either our CNC Motorshield (and power the stepper motors) or our RC Motor ESC. A picture of the connections before we harnessed
+            the wires to the tripod is shown to the left as well, with an arrow pointing to an example of such a split.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="overview">
+      <h4>Stepper Motors</h4>
+      <br>
+      <div class="row">
+        <div class="col">
+          <img src="assets/final_prod_assets/hor_stepper.jpg" style="width: 100%">
+        </div>
+        <div class="col">
+          <img src="assets/final_prod_assets/vert_stepper.jpg" style="width: 100%">
+        </div>
+        <div class="col-5">
+          <p>
+            The system used two stepper motors to horizontally pan and vertically tilt the camera towards the detected person. 
+            The panning stepper is shown in the leftmost image-- it sits in the box under the tripod head and when the stepper rotates,
+            the gears attached spin the tripod head containing the camera with it. The tilting stepper is pictured in the second photo, 
+            where it is attached to a gear that moves the camera up and down. Both steppers are driven by A4988 Drivers and a CNC Motorshield
+            mounted on top of an Arduino UNO R3 with our LiPo battery supplying power.
+          </p> 
+        </div>
+      </div>
+    </div>
+
+    <div class="overview">
+      <h4>Raspberry Pi</h4>
+      <br>
+      <div class="row">
+        <div class="col">
+          <img src="assets/final_prod_assets/rasp_pi.jpg" style="width: 100%">
+        </div>
+        <div class="col">
+          <img src="assets/final_prod_assets/picamera.jpg" style="width: 100%">
+        </div>
+        <div class="col-5">
+          <p>
+            The Raspberry Pi was loaded with a program to track people's bodies and send commands to the Arduino via Serial communication
+            through a USB cable. We mounted the Pi to the side of the tripod and 
+            powered it with a battery pack, and attached the Picamera near the top of the tripod head.
+          </p> 
+        </div>
+      </div>
+    </div>
+
+    <div class="overview">
+      <h4>RC Motor and ESC</h4>
+      <br>
+      <div class="row">
+        <div class="col">
+          <img src="assets/final_prod_assets/esc_rc_motor.jpg" style="width: 100%">
+        </div>
+        <div class="col-7">
+          <p>
+            One of our stretch goals was to have the tripod drive on its own to physically follow a person as well. We used an RC Motor 
+            and a corresponding Electronic Stability Controller (ESC), using a separate Arduino to send motor commands to it. However,
+            due to time limitations we were not able to integrate properly with the rest of the system. If you want to learn more details
+            about electrical progress with the RC Motor, look into the Sprint 3 page.
+          </p> 
+        </div>
+      </div>
+    </div>
+  
+    <div class="container sec-title">
+      <div class="card mx-auto img-fluid section-card" style="background-color: gray;">
+          <h1 class="card-text" style="color:white; font-size: 50px;">Firmware Design</h1>
+      </div>
+    </div>
+
+    <div class="overview">
+      <h4>Stepper Motor Logic</h4>
+      <br>
+      <div style="text-align: center;">
+        <img src="assets/final_prod_assets/firmware_block_diagram.png" style="width: 60%;">
+      </div>
+      <br>
+      <p>
+        For the full firmware code, see the stepper_pan_tilt folder in our <a href="https://github.com/redhotchili0909/cam-track">GitHub Repo.</a>
+      </p>
+      <p>
+        Using our Arduino UNO R3, we sent commands to the x and y stepper motors to move the camera according to commands from the Raspberry
+        Pi tracking program. We start by reading the x and y coordinate sent through Serial communication from the Pi-- based on the sign and
+        value of the coordinates, we determine the direction and number of steps each motor must take. The number of steps is also reduced
+        by a <i>signDividend</i> for each motor-- this value comes from tuning and makes sure the steppers move the appropriate amount and 
+        aren't stuck in a loop rotating and unable to read new Pi commands.
+      </p>
+      <p>
+        The actual driving loop uses the maximum steps between x and y steps as a counter-- this enables us to move x and y motors in the same
+        loop so the camera can pan and tilt at the same time. The process of stepping once involves sending a high pulse for a short amount of time,
+        followed by a low pulse. Repeating this some number of times produces the same number of steps.  
+      </p>
+      <p>
+        After the driving loop is done, the steppers are set low and go back to waiting for new Pi commands.
+      </p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
