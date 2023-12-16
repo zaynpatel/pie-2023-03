@@ -43,4 +43,5 @@ Finally, we of course had to integrate everything. First, we modified the servo 
 
 ![diagram of showing the flow of code](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/CodeDiagram.png "Code Diagram")
 
-![diagram of showing the flow of code](/mechanical-mirror/Images/CodeDiagram.png "Code Diagrams")
+![diagram of showing the flow of code](https://github.com/mcuevas-olin/pie-2023-03/blob/45809084f4a78f7b835afeea5d53f8cebf5c9f1a/mechanical-mirror/Images/CodeDiagram.png)
+
