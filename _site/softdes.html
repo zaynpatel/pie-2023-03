@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <head>
+  <title>
+    
+      Software Design | MuNCHER
+    
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <!-- Use Atom -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:3000/feed.xml" title="MuNCHER" />
+  <!-- RSS-v2.0
+  <link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="MuNCHER | Soil Sampling Robot"/>
+  //-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-112060364-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  <!-- Use Jekyll SEO plugin -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Software Design | MuNCHER</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Software Design" />
+<meta name="author" content="Zayn Patel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Soil Sampling Robot" />
+<meta property="og:description" content="Soil Sampling Robot" />
+<link rel="canonical" href="http://localhost:3000/softdes" />
+<meta property="og:url" content="http://localhost:3000/softdes" />
+<meta property="og:site_name" content="MuNCHER" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-12-15T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Software Design" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Zayn Patel"},"dateModified":"2023-12-15T00:00:00-05:00","datePublished":"2023-12-15T00:00:00-05:00","description":"Soil Sampling Robot","headline":"Software Design","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:3000/softdes"},"url":"http://localhost:3000/softdes"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+  <body>
+    <div class="container">
+      <header class="site-header">
+  <h3 class="site-title">
+    <a href="/">MuNCHER</a>
+  </h3>
+  <nav class="menu-list">
+    
+      <a href="/mechdes" class="menu-link">Mechanical Design</a>
+    
+      <a href="/elecdes" class="menu-link">Electrical Design</a>
+    
+      <a href="/softdes" class="menu-link">Software Design</a>
+    
+      <a href="/about" class="menu-link">About</a>
+    
+    
+      <a href="https://github.com/olincollege/The-MuNCHER" class="menu-link" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+    
+  </nav>
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    <div class="dropdown-content">
+      
+        <a href="/mechdes" class="menu-link">Mechanical Design</a>
+      
+        <a href="/elecdes" class="menu-link">Electrical Design</a>
+      
+        <a href="/softdes" class="menu-link">Software Design</a>
+      
+        <a href="/about" class="menu-link">About</a>
+      
+      
+        <a href="https://github.com/olincollege/The-MuNCHER" class="menu-link" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+      
+    </div>
+  </div>
+</header>
+
+      <div class="content-wrapper">
+        <div class="post-content">
+  <h1>
+    Software Design
+  </h1>
+  
+    <span class="post-date">
+  
+  
+  December
+  15th,
+  2023
+  by
+  
+    Zayn Patel
+  
+</span>
+
+  
+  
+  <article>
+    <h2 id="design-goals">Design Goals</h2>
+<p>Firmware design on the rover can be divided into two component halves: a low-level driver to operate the soil sampler, a high level Arduino script to interact with the soil sampler, and parsing code which acted as a passthrough between a JS front-end application, Jetson Nano, and ESP32s.</p>
+
+<p><img src="https://zaynpatel.github.io/the_muncher//assets/img/frontend_App.png" alt="Frontend App" /></p>
+
+<p>Our team added other features like AprilTag Detection so the rover could drive autonomously, a Turret to dispense seeds in Parcel B, and a text to speech/speech to text pipeline so humans could talk to the robot.</p>
+
+<p><a href="https://github.com/olincollege/The-MuNCHER">Our code</a> used many external dependencies including:</p>
+<ul>
+  <li>socket</li>
+  <li>serial</li>
+  <li>apriltag library</li>
+  <li>OpenCV library</li>
+  <li>gstreamer pipeline</li>
+  <li>numpy</li>
+</ul>
+
+<h2 id="implemented-solutions-decision-explanations-and-iterations">Implemented Solutions, Decision Explanations, and Iterations</h2>
+
+<h4 id="soil-sampler-code">Soil Sampler Code</h4>
+<p>The code works where commands are sent from the Jetson Nano that instructs the soil sampler to pick up a cartridge, retrieve a soil sample and return the cartridge to the same slot on the plate. The Jetson will send one digit that specifies which slot to pick up and another as an emergency abort message. The code orders commands between limit switches, lead screws, steppers and drill speed in a specified order to achieve the soil sampling capabilities. One issue that we faced was getting the stepper motor that controlled the cartridge plate to rotate to where the cartridges lay directly under the drill. This took a bit of guesswork and checking in order to get it to work properly.</p>
+
+<p><img src="https://zaynpatel.github.io/the_muncher//assets/img/IMG_7064 2.MOV" alt="insert image of soil sampler video" /></p>
+
+<h4 id="app-ui-code">App/ UI Code</h4>
+<p>The app is a simple one-page Electron site that holds the key controls for the app including remote control drive modes (w, a, s, d), live stream from the USB camera, robot status (whether it’s connected to battery voltage or not), sampler controls (what sample it’s currently getting and whether or not it’s taking a sample).</p>
+
+<h4 id="jetson-code">Jetson Code</h4>
+<p>The Jetson serves as a passthrough module for commands from the JS application to send through the Jetson and from the Jetson commands go through the ESP32. In addition, the Jetson was used to run computer vision pipelines so we could detect apriltags and autonomously drive.</p>
+
+<h4 id="esp32-code">ESP32 Code</h4>
+<p>We have two ESP32 that share io functionality and send and receive messages to and from the Jetson Nano. ESP32 A does the stepper motor, limit switch, drill and servos commands. ESP32 B does the drive commands and LED’s. The ESP32 are dual-core which allow USB communications as well as IO commands simultaneously. The reason for two ESP32 is in order to improve processing speed and IO capabilities.</p>
+
+<h4 id="camera-system">Camera System</h4>
+<p>We have two cameras connected to a jetson – one camera is an FPV camera that connects to a VR headset and the other camera is USB connected and captures real-time video and detects apriltags. The USB camera was calibrated to detect apriltags using the apriltag python library with the detection_pose function. Configuring this gave us focal length and optical centers so the camera would focus and detect apriltags from multiple angles. We decided to integrate the apriltags so our rover could drive autonomously. The FPV camera was simpler to configure and enables us to drive using a first person view on the camera.</p>
+
+<h2 id="considerations-for-future-work">Considerations for Future Work</h2>
+<p>For future work we would like to implement a LLM into The MuNCHER that is able to provide answers in a human-like way to any prompted question. Also, we would like to add low-level embodied intelligence which goes above april-tag autonomy and allows us to do path following and object detection / avoidance.</p>
+
+  </article>
+  
+    
+
+  
+  
+    
+  
+  
+</div>
+
+      </div>
+      <footer class="footer">
+  
+    <a href="https://github.com/olincollege/The-MuNCHER" class="menu-link" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+  <div class="footer-description">Proudly created by the Matt Farmar, Ian Walsh, Kenta Terasaki, Zayn Patel, and Mihir Vemuri team.</div>
+</footer>
+
+    </div>
+  </body>
+</html>
