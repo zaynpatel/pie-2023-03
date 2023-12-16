@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "polynomial-sum-381022",
+  "private_key_id": "ebfc40c04b6733e12a89ee55e3f5df6ae580ddc7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCwP7RMQ7oA46Yi\nGj8ltZyG9Z8G1RjdS9TMZihXwAjeUXty2lC0N4VpS0QKycq65D5Z9G/KOSFo9TXg\nm6ZpSrUM4+5NQRLC/VAxnG9lMGTtoKXLBUyXlzxfu0S3zaPBGyTfJgCmh6s5faXO\n1td9YvC5rjEQhCFVCtb7c8lrzuT3G/tlLyspCt8lYi7kRpECsq61iDJ0qv7txjZb\nZpaKzK2tagz6VB7gVlVnrO8Tx/W5edEEr/O8vqoDQnxvu0CMQx5IPlGAkQHabOXp\n5ChU+OShW4sDRtyfuCY+5U4rr2HgObtp3GqQ5Q7lfUsuJZse7uyvwc9ujKSv+bdy\nt93UZ8ZdAgMBAAECggEAFHeJXfPddT36bGpk2+GvqCJ80aPMa+Ji90uDstD7lqma\nrtc4WP07kmMppyEQ2EwqC3MtyiuBPDmBhLA+jmqdBL6xTSpZ3efhuKkkbHlGtyuZ\nJS7b2py2550NGVUZh5K54On+WFhX42i6aP8c7hQfxUg7rWHSpxgHqBKlmM3hW+qj\nvsimu3Sj02T/BgUxbFf3ecW53DYQc2MYPyJtoxTQAHWwuDv3U6EzLfwbOZLeMUvE\nd4dhlq45SKDPHHD9pjz1qopzdXa10cp0XMJ4tLMxMoG0b/Z2Lb9pBhj4Aj6u7IB+\ngHwygN2UeT5hl1JR8fB+ZSb7ajofwazxl7/Qh3HglwKBgQDv/KrekbHElLga2Ti/\n77p5xiCTfbWrpNpClSkYwLebCqNN0iORHKZKfjkEShnTQpEPFG9N7KQfU+7OBAU6\nFX6JXWxWxMqPlshqRBYh9S3+36oRwl/rGc4F0oMrn5ko/0dJrK8XdJs85iiLeYVU\nfKZAET+UCSSfzUW+YY/0PWJ7MwKBgQC8AkuRj9FILTy5ilCoIr/WBKyBr2WEwDMX\ncIIv84ri3HEZV6EjISqB2Ue+ZZI5IXzOI5a9UtfSjo+DyxZgo5Yl5Vmj83TuvZqO\nAbVriK7DUlsLGeLANADw02HhDB9VE+TnrG+B3WZZu0lrIiucfErIP2bzFbNNB0b+\nk72f6iA4LwKBgQC8U1YvZLvQ3TgAcbgz/sciKpWDyKGY+bwBhhYDA7DRrS5rsl0Q\n0h+404ag1BmiDFnTMKEL0IkWwIHlD4iehSGQYEzVZobi2Vua8KVBrqqSmShX2WX2\nE4D2VrVytUK2xmVF7opUaMAtsRveH9W+cDbyjdaLsAUaljaF6P/TlZxDuwKBgH81\nclooHCug6CCGNLK+6Fvvx6Trv13GCgvHBV9agtOi4ieKgi3ZyAAZuxBZe0mKnf6A\nWAL7paoC6Zn79MUoinRTrYZgOPM8ePGyuETtM4pXE+D7/8+aoDRSYjy6TgzrrAsR\nQlV1L0ZxkWiaszVrZ9H8DDVXrnzk+qVP45LrACfjAoGAQfnSRgtVTqAeoG+J7wID\nTul4pblcd8T/z8lFq+rFg4eEHhOagC54QQ8X2/KlOL0zKbRFJDXx3q/uoD5cx57+\nHtM1rMFBZWetl16E0Y9iVlzfbUc8ZqqlLwbdnNZSjWE+blFOVsrOl9/tpKVlJC9o\nQcMryGxtxVjf6txekljXs0M=\n-----END PRIVATE KEY-----\n",
+  "client_email": "the-muncher@polynomial-sum-381022.iam.gserviceaccount.com",
+  "client_id": "117496326898834446009",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/the-muncher%40polynomial-sum-381022.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
