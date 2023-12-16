@@ -2,7 +2,8 @@
 
 ## Sprint 1:
 In sprint one, there were two systems that we needed to code. This first was image processing, which would take an image of the background and an image of the subject and turn it into data we could display.
-![Photo of background](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/Background.png "Photo taken of background")
+
+![Photo of background](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/person.png "Photo taken of background")
 ![Photo with a person](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/person.png "Photo taken with person in frame")
 
 To find the subject we first crop the images to the same dimensions as the final resulting image.
