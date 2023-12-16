@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:3000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:3000/" rel="alternate" type="text/html" /><updated>2023-12-15T21:54:01-05:00</updated><id>http://localhost:3000/feed.xml</id><title type="html">MuNCHER</title><subtitle>Soil Sampling Robot</subtitle><author><name>Matt Farmar, Ian Walsh, Kenta Terasaki, Zayn Patel, and Mihir Vemuri</name></author><entry><title type="html">What is MuNCHER?</title><link href="http://localhost:3000/what_is_muncher" rel="alternate" type="text/html" title="What is MuNCHER?" /><published>2023-12-15T00:00:00-05:00</published><updated>2023-12-15T00:00:00-05:00</updated><id>http://localhost:3000/welcome-to-millennial</id><content type="html" xml:base="http://localhost:3000/what_is_muncher"><![CDATA[<p>The MuNCHER (<strong>Multidirectionally Navigable and Computationally Helmed Exploratory Rover</strong>) is a: 4-wheel, autonomous, first person VR drive, talking Mars Rover inspired robot built by <a href="">students at the Olin College of Engineering</a>.</p>
+
+<p>When we started <a href="">brainstorming</a> this project on October 16, 2023 we wanted to create a robust robotic vehicle that could navigate <a href="">Parcel B</a>, the forest behind Olin College, and collect multiple soil samples using a retrofitted drill and lazy susan storage mechanism.</p>
+
+<p>“Share more about how the project was broken up – 6 week sprints, share a calendar image that shows this, will be cooler, can even sketch goal v. accomplished”</p>
+
+<h3 id="table-breakdown-of-what-we-accomplished-in-each-sprint">Table breakdown of what we accomplished in each sprint</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sprint</th>
+      <th>Mechanical</th>
+      <th>Electrical</th>
+      <th>Software</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>First version of drivetrain and suspension modules designed and fabricated. First version of the soil sampler design complete.</td>
+      <td>Battery wiring, motor controller sealing and wires attached to ESP32</td>
+      <td>Arduino code so we can control and move the robot around.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Redesign and fabrication of drivetrain and suspension complete. Soil sampler design finalized and system fabricated.</td>
+      <td>Wired Jetson, ESP32, CNC Motor Shield, Stepper motors, batteries onto the rover.</td>
+      <td>Remote controlled the rover through a combination of keyboard inputs on a JS application to a Jetson Nano to one of our ESP32’s.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Final soil sampling mechanical design revisions. Added body panels as electrical enclosures. Mechanical design for soil sampling turret.</td>
+      <td>Integrated soil sampling on linear slides, added a turret based seed dispenser to the side of the rover, an FPV camera/VR headset, USB Camera, Attached blue LEDs to the bottom of the rover.</td>
+      <td>Wrote a low level driver for the soil sampling drill, write high level code to communicate with the soil sampler, calibrated and detected april tags with USB camera, got the rover to talk using an LLM.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="system-diagram">System Diagram</h3>
+<p><img src="https://zaynpatel.github.io/the_muncher//assets/img/SysArch.png" alt="System Diagram" /></p>
+
+<p>The above diagram shares a high-level overview of the system. Red represents electrical components, blue represents mechanical components, green represents software components.</p>
+
+<p>These are elaborated on in specific pages on the website.</p>]]></content><author><name>Team</name></author><summary type="html"><![CDATA[The MuNCHER (Multidirectionally Navigable and Computationally Helmed Exploratory Rover) is a: 4-wheel, autonomous, first person VR drive, talking Mars Rover inspired robot built by students at the Olin College of Engineering.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:3000/munchie1.png" /><media:content medium="image" url="http://localhost:3000/munchie1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Financial Summary</title><link href="http://localhost:3000/bill_of_materials" rel="alternate" type="text/html" title="Financial Summary" /><published>2023-12-14T00:00:00-05:00</published><updated>2023-12-14T00:00:00-05:00</updated><id>http://localhost:3000/about-the-author</id><content type="html" xml:base="http://localhost:3000/bill_of_materials"><![CDATA[<p>Below you can find our itemized Bill of Materials for the MuNCHER project.</p>
+
+<p><img src="https://zaynpatel.github.io/the_muncher//assets/img/bom.png" alt="insert BOM image here" /></p>
+
+<p>The scavenged items (not purchased) have cost approximations and explanations of where they were sourced, and they do not contribute to the overall $250 project budget. At the bottom, the left total shows the overall cost while the right total (in green) shows the actual expenditures.</p>]]></content><author><name>Team</name></author><summary type="html"><![CDATA[Below you can find our itemized Bill of Materials for the MuNCHER project.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:3000/munchie2.jpg" /><media:content medium="image" url="http://localhost:3000/munchie2.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Photos and Videos</title><link href="http://localhost:3000/photo_gallery" rel="alternate" type="text/html" title="Photos and Videos" /><published>2023-12-14T00:00:00-05:00</published><updated>2023-12-14T00:00:00-05:00</updated><id>http://localhost:3000/getting-started</id><content type="html" xml:base="http://localhost:3000/photo_gallery"><![CDATA[<h1 id="muncher">MuNCHER</h1>
+
+<p><img src="https://zaynpatel.github.io/the_muncher//assets/img/sprint1.png" alt="insert photo and video gallery" /></p>
+
+<p><strong>Sprint 1 MuNCHER</strong></p>
+
+<p><img src="https://zaynpatel.github.io/the_muncher//assets/img/sprint2.png" alt="insert photo and video gallery" /></p>
+
+<p><strong>Spring 2 MuNCHER</strong></p>
+
+<p><img src="https://zaynpatel.github.io/the_muncher//assets/img/soilsamplertrial.png" alt="insert photo and video gallery" /></p>
+
+<p><strong>Soil sample version 1.0</strong></p>
+
+<p><img src="https://zaynpatel.github.io/the_muncher//assets/img/munCher.png" alt="insert photo and video gallery" /></p>
+
+<p><strong>Sprint 1 plate design</strong></p>
+
+<p><img src="https://zaynpatel.github.io/the_muncher//assets/img/plate.png" alt="insert photo and video gallery" /></p>
+
+<p><strong>Sprint 1 plate design (another angle)</strong></p>
+
+<p><img src="https://zaynpatel.github.io/the_muncher//assets/img/teamLooking.png" alt="insert photo and video gallery" /></p>
+
+<p><strong>Team working through a critical design decision</strong></p>]]></content><author><name>Team</name></author><summary type="html"><![CDATA[MuNCHER]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:3000/munchie3.png" /><media:content medium="image" url="http://localhost:3000/munchie3.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
